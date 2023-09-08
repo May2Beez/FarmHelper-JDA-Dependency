@@ -1,16 +1,15 @@
 [
   {
     "modid": "${modid}",
-    "name": "Xample Mod",
-    "description": "A mod that is used as an example.",
+    "name": "FarmHelper JDA Dependency",
+    "description": "A mod that is used to connect to discord bot",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "https://github.com/romangraef/Forge1.8.9Template/",
     "updateUrl": "",
     "authorList": [
-      "You"
+      "None"
     ],
-    "credits": "",
+    "credits": "Skidded idea from Cephetir 🤓",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
