@@ -37,6 +37,8 @@ sourceSets.main {
 repositories {
     mavenCentral()
     maven("https://repo.spongepowered.org/maven/")
+    maven("https://jitpack.io")
+    maven("https://maven.ilarea.ru/snapshots")
 }
 
 val shadowImpl: Configuration by configurations.creating {
@@ -47,6 +49,7 @@ dependencies {
     minecraft("com.mojang:minecraft:1.8.9")
     mappings("de.oceanlabs.mcp:mcp_stable:22-1.8.9")
     forge("net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9")
+    shadowImpl("org.apache.commons:commons-collections4:4.4")
     shadowImpl("net.dv8tion:JDA:5.0.0-beta.13") {
         exclude(module = "opus-java")
     }
@@ -102,7 +105,7 @@ tasks.shadowJar {
     }
 
     // If you want to include other dependencies and shadow them, you can relocate them in here
-    fun relocate(name: String) = relocate(name, "$baseGroup.deps.$name")
+    relocate("org.apache.commons.collections4", "com.jelly.apache.commons.collections4")
 }
 
 tasks.assemble.get().dependsOn(tasks.remapJar)

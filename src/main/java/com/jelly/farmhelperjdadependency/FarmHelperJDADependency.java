@@ -6,6 +6,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 @Mod(modid = "farmhelperjdadependency", useMetadata=true)
 public class FarmHelperJDADependency {
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event) {
+    public void init(FMLInitializationEvent event) throws NoSuchFieldException, IllegalAccessException {
     }
 }
