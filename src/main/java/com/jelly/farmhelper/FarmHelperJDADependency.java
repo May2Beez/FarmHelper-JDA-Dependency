@@ -1,4 +1,4 @@
-package com.jelly.farmhelperjdadependency;
+package com.jelly.farmhelper;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
