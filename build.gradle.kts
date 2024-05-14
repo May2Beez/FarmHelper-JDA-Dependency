@@ -54,6 +54,7 @@ dependencies {
         exclude(module = "opus-java")
         exclude(module = "jackson-core")
     }
+    shadowImpl("com.fasterxml.jackson.core:jackson-core:2.15.0")
 }
 
 // Tasks:
