@@ -50,8 +50,9 @@ dependencies {
     mappings("de.oceanlabs.mcp:mcp_stable:22-1.8.9")
     forge("net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9")
     shadowImpl("org.apache.commons:commons-collections4:4.4")
-    shadowImpl("net.dv8tion:JDA:5.0.0-beta.13") {
+    shadowImpl("net.dv8tion:JDA:5.0.0-beta.24") {
         exclude(module = "opus-java")
+        exclude(module = "jackson-core")
     }
 }
 
